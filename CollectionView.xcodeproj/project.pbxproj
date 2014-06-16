@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C43CD1B194588E200423B72 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C43CD1A194588E200423B72 /* TaskViewController.m */; };
 		3CC1F9B01936FAFC0052E827 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC1F9AF1936FAFC0052E827 /* Foundation.framework */; };
 		3CC1F9B21936FAFC0052E827 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC1F9B11936FAFC0052E827 /* CoreGraphics.framework */; };
 		3CC1F9B41936FAFC0052E827 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC1F9B31936FAFC0052E827 /* UIKit.framework */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C43CD19194588E200423B72 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaskViewController.h; path = ../TaskViewController.h; sourceTree = "<group>"; };
+		3C43CD1A194588E200423B72 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaskViewController.m; path = ../TaskViewController.m; sourceTree = "<group>"; };
 		3CC1F9AC1936FAFC0052E827 /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC1F9AF1936FAFC0052E827 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3CC1F9B11936FAFC0052E827 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,6 +146,8 @@
 				3CC1F9BF1936FAFC0052E827 /* AppDelegate.m */,
 				3CC1F9C41936FAFC0052E827 /* ViewController.h */,
 				3CC1F9C51936FAFC0052E827 /* ViewController.m */,
+				3C43CD19194588E200423B72 /* TaskViewController.h */,
+				3C43CD1A194588E200423B72 /* TaskViewController.m */,
 				3CC1F9C71936FAFC0052E827 /* Images.xcassets */,
 				3CC1F9B61936FAFC0052E827 /* Supporting Files */,
 			);
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC1F9C61936FAFC0052E827 /* ViewController.m in Sources */,
+				3C43CD1B194588E200423B72 /* TaskViewController.m in Sources */,
 				3CC1F9C01936FAFC0052E827 /* AppDelegate.m in Sources */,
 				3CC1F9BC1936FAFC0052E827 /* main.m in Sources */,
 				3CC1F9E61936FB2E0052E827 /* Collection.m in Sources */,
@@ -502,6 +508,7 @@
 				3CC1F9E01936FAFC0052E827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CC1F9E11936FAFC0052E827 /* Build configuration list for PBXNativeTarget "CollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				3CC1F9E31936FAFC0052E827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

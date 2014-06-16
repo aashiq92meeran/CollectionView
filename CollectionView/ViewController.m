@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Collection.h"
+#import "TaskViewController.h"
 
 @interface ViewController ()
 
@@ -15,13 +16,17 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad
 {
+//     tObj = [[TaskViewController alloc]init];
     [super viewDidLoad];
 	
     natureImagename = [[NSArray alloc] initWithObjects:@"1.jpeg",@"2.jpeg",@"3.jpeg",@"4.jpeg",@"5.jpeg",@"6.jpeg",@"7.jpeg",@"8.jpeg",@"9.jpeg",@"10.jpeg", nil];
     
     natureLabel = [[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10", nil];
+  
     
 }
 
@@ -54,8 +59,23 @@
     
     return mycell;
     
+}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"Selected cell at index path %ld", (long)indexPath.row);
     
+    [natureImagename objectAtIndex:indexPath.row ];
+    
+
 }
 
+- (IBAction)Setting:(id)sender {
+    
+    
+    _tObj = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"TaskViewController"];
+    [self presentingViewController:r  ]
 
+    
+    
+}
 @end

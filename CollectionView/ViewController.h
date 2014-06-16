@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TaskViewController.h"
 
 @interface ViewController : UICollectionViewController <UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -15,4 +16,13 @@
     NSArray * natureImagename ,* natureLabel;
     
 }
+
+@property (strong,nonatomic) TaskViewController * tObj;
+
+
+- (IBAction)Setting:(id)sender;
+
+
+
+
 @end
